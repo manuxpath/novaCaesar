@@ -23,7 +23,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: red;
+    background-color: rgb(217, 180, 46);
     padding: 10px;
     border-radius: 5px;
 }
@@ -31,16 +31,31 @@ header {
 header img {
     width: 15vw;
     height: auto;
+    opacity: 90%;
     margin-right: 20px;
 }
 
+header img:hover {
+    width: 15.2vw;
+    opacity: 100%;
+}
+
 header h1 {
-    font-size: 4.5vw;
+    font-size: 3vw;
     margin-top: 5px;
+    text-shadow: 1px 2px 1px black;
+    color: rgb(41, 32, 32);
+    opacity: 95%;
+}
+
+header h1:hover {
+    font-size: 3.1vw;
+    text-decoration:underline dotted;
+    opacity: 100%;
 }
 
 nav {
-    background-color: #333;
+    background-color: #181414;
     border-radius: 5px;
 }
 
@@ -70,9 +85,6 @@ nav ul > li:nth-child(2):hover #submenu {
 
 }
 
-#actual{
-    color: yellow;
-}
 
 nav ul li > a {
     text-decoration: none;
@@ -83,7 +95,7 @@ nav ul li > a {
 }
 
 nav ul li:nth-child(2):hover #submenu li > a{
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     padding: 15px;
     padding-bottom: 20px;
 }

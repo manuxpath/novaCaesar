@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCaesar web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-    <link rel="icon" type="image/png" href="img/icon.png"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body>
     <div id="container">
         <header>
-            <div id="imgheader"><img src="img/logo.png" alt=""/></div>
-            <div id="logoheader"><h1>NovaCaesar</h1></div>
+            <div id="imgheader"><img src="img/logo.png" alt="" /></div>
+            <div id="logoheader">
+                <h1 id="texto"></h1>
+            </div>
         </header>
         <nav>
             <ul>
-                <li><a href="#" id="actual">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#">Proyecto</a>
                     <ul id="submenu">
                         <li><a href="#">Descargar</a></li>
                         <li><a href="#">Sobre su creador</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Redes Sociales</a></li>
             </ul>
         </nav>
     </div>
+    <script>
+        const textArray = ["B","Bi","Bie","Bien","Bienv","Bienve","Bienven","Bienveni","Bienvenid","Bienvenido","Bienvenido a","Bienvenido a N", "Bienvenido a No", "Bienvenido a Nov", "Bienvenido a Nova", "Bienvenido a NovaC", "Bienvenido a NovaCa", "Bienvenido a NovaCae", "Bienvenido a NovaCaes", "Bienvenido a NovaCaesa", "Bienvenido a NovaCaesar"];
+        let textIndex = 0;
+        const animatedText = document.getElementById('texto');
+
+        function animateText() {
+            animatedText.textContent = textArray[textIndex];
+            textIndex = (textIndex + 1) % textArray.length;
+        }
+
+        setInterval(animateText, 200);
+
+    </script>
 </body>
+
 </html>
