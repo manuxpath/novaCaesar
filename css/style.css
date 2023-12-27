@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2.20vh auto 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header img {
+    width: 15vw;
+    height: auto;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 4.5vw;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+
+
+nav ul > li:hover {
+    background-color: #555;
+    color: white;
+}
+
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav ul > li:nth-child(2):hover #submenu {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#actual{
+    color: yellow;
+}
+
+nav ul li > a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+    font-size: 2.5vh;
+}
+
+nav ul li:nth-child(2):hover #submenu li > a{
+    font-size: 1.5vw;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+nav ul li:nth-child(2):hover #submenu li > a:hover{
+    background-color: #333;
+}
+
