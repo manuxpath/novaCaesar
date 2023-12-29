@@ -76,6 +76,7 @@ nav ul > li:hover {
     position: absolute;
     background-color: #555;
     border-radius: 5px;
+    border-top-left-radius: 0px;
 }
 
 nav ul > li:nth-child(2):hover #submenu {
