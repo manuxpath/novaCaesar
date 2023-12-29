@@ -127,6 +127,10 @@ footer{
     width: 80%;
 }
 
+section{
+    width: 100%;
+}
+
 aside {
     width: 20%;
     border: 1px solid black;
