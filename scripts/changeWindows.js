@@ -1,7 +1,7 @@
 
 function cambiarSeccion(index) {
 
-    const secciones = document.querySelectorAll('.tab1');
+    const secciones = document.querySelectorAll('.tab');
     secciones.forEach(function(seccion) {
         seccion.style.display = 'none';
     });
