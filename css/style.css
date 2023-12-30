@@ -64,6 +64,12 @@ nav ul {
     list-style: none;
 }
 
+#miFoto{
+    width: 25vw;
+    height: 25vh;
+    margin: 5vh;
+}
+
 
 
 nav ul > li:hover {
